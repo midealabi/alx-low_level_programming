@@ -22,15 +22,16 @@ int main(void)
 			}
 			if (i == '8' && j == '9')
 			{
-				break
+				break;
 			}
 			else
 			{
 				putchar(',');
 				putchar(' ');
 			}
-
 		}
 		k++;
 	}
-
+	putchar('\n');
+	return (0);
+}
