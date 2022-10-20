@@ -8,7 +8,7 @@ void print_square(int size)
 {
 	if (size <= 0)
 	{
-		_putcha('\n');
+		_putchar('\n');
 	}
 	else
 	{
