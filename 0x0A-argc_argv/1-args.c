@@ -10,7 +10,7 @@
 int main(int argc, char *argv[])
 {
 	(void) argv; /*ignore argv*/
-	print ("%i\n", argc - 1);
+	print ("%d\n", argc - 1);
 
 	return (0);
 }
