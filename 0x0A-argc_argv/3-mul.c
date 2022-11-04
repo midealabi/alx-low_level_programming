@@ -1,4 +1,3 @@
-#include "main.h"
 #include <stdio.h>
 #include <stlib.h>
 /**
@@ -8,18 +7,21 @@
  * Return: 0
  */
 
-int main(int argc, __attribute__((unused)) char *argv[])
+int main(int argc, char *argv[])
 {
-	if (argc > 2)
-	{
-		printf("%d\n", atoi(argv[1]) * atoi(argv[2]));
+	int result = 1, i;
 
-		return (0);
-	}
-	else if (argc < 3)
+	if (argc == 3)
 	{
-	printf("Error\n");
-	return (1);
+		for (i = 1; i < argc; i++)
+			result = result * strtol(argv[i], NULL, 10);
+		printf("%d\n", result);
 	}
+	else
+	{
+		printf("Error\n");
+		return (1);
+	}
+
 	return (0);
 }

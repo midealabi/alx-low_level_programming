@@ -1,3 +1,6 @@
+#ifndef FILE_MAIN
+#define FILE_MAIN
 int _putchar(char c);
 int check_num(char *str);
-int main(int argc, char *argv[]);
+int _atoi(char *s);
+#endif
