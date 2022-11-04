@@ -1,10 +1,11 @@
 #include <stdio.h>
 #include <stlib.h>
+
 /**
- * main - a program that multiplies two numbers
- * @argc: the number of arguments
- * @argv: the name of the arguments
- * Return: 0
+ * main - entry point
+ * @argc: arg count
+ * @argv: arg vector
+ * Return: success
  */
 
 int main(int argc, char *argv[])
@@ -14,8 +15,11 @@ int main(int argc, char *argv[])
 	if (argc == 3)
 	{
 		for (i = 1; i < argc; i++)
+
 			result = result * strtol(argv[i], NULL, 10);
+
 		printf("%d\n", result);
+
 	}
 	else
 	{
@@ -24,4 +28,5 @@ int main(int argc, char *argv[])
 	}
 
 	return (0);
+
 }
