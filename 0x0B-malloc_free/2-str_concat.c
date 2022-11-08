@@ -30,7 +30,7 @@ char *str_concat(char *s1, char *s2)
 	char *new;
 	unsigned int i;
 	unsigned int j;
-	int total = 0
+	int total = 0;
 
 	if (!s1)
 		s1 = "";
